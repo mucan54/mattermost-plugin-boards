@@ -48,6 +48,25 @@ describe('utils', () => {
         })
     })
 
+    describe('getCardShortId', () => {
+        test('should derive an uppercase branch-safe shortcode from a card id', () => {
+            expect(Utils.getCardShortId('cabcdefghijklmnopqrstuvwxy')).toBe('TASK-RSTUVWXY')
+        })
+        test('should use the trailing 8 chars of the unique part', () => {
+            expect(Utils.getCardShortId('cybndrfg8ejkmcpqxot1uwisza')).toBe('TASK-T1UWISZA')
+        })
+        test('should be deterministic for the same id', () => {
+            const id = Utils.createGuid(IDType.Card)
+            expect(Utils.getCardShortId(id)).toBe(Utils.getCardShortId(id))
+        })
+        test('should match the expected TASK-XXXXXXXX format', () => {
+            expect(Utils.getCardShortId(Utils.createGuid(IDType.Card))).toMatch(/^TASK-[A-Z0-9]{8}$/)
+        })
+        test('should return empty string for empty id', () => {
+            expect(Utils.getCardShortId('')).toBe('')
+        })
+    })
+
     describe('htmlFromMarkdown', () => {
         test('should not allow XSS on links href on the webapp', () => {
             expect(Utils.htmlFromMarkdown('[]("xss-attack="true"other="whatever)')).toBe('<p><a target="_blank" rel="noreferrer" href="%22xss-attack=%22true%22other=%22whatever" title="" onclick=""></a></p>')

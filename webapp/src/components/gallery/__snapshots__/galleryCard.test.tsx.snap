@@ -24,6 +24,19 @@ exports[`src/components/gallery/GalleryCard with a comment content return Galler
         title
       </div>
     </div>
+    <div
+      class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId gallery-taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -200,6 +213,19 @@ exports[`src/components/gallery/GalleryCard with a comment content should match 
       >
         title
       </div>
+    </div>
+    <div
+      class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId gallery-taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
     </div>
   </div>
 </div>
@@ -384,6 +410,19 @@ exports[`src/components/gallery/GalleryCard with an image content should match s
         title
       </div>
     </div>
+    <div
+      class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId gallery-taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -415,6 +454,19 @@ exports[`src/components/gallery/GalleryCard with many contents return GalleryCar
       >
         title
       </div>
+    </div>
+    <div
+      class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId gallery-taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
     </div>
   </div>
 </div>
@@ -596,6 +648,19 @@ exports[`src/components/gallery/GalleryCard with many contents should match snap
       >
         title
       </div>
+    </div>
+    <div
+      class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId gallery-taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
     </div>
   </div>
 </div>
@@ -780,6 +845,19 @@ exports[`src/components/gallery/GalleryCard with many images content should matc
         title
       </div>
     </div>
+    <div
+      class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId gallery-taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -820,6 +898,19 @@ exports[`src/components/gallery/GalleryCard without block content return Gallery
       >
         title
       </div>
+    </div>
+    <div
+      class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId gallery-taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
     </div>
   </div>
 </div>
@@ -862,6 +953,19 @@ exports[`src/components/gallery/GalleryCard without block content return Gallery
         title
       </div>
     </div>
+    <div
+      class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId gallery-taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -902,6 +1006,19 @@ exports[`src/components/gallery/GalleryCard without block content return Gallery
       >
         title
       </div>
+    </div>
+    <div
+      class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId gallery-taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
     </div>
   </div>
   <div
@@ -1014,6 +1131,19 @@ exports[`src/components/gallery/GalleryCard without block content return Gallery
       >
         title
       </div>
+    </div>
+    <div
+      class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId gallery-taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
     </div>
   </div>
 </div>
@@ -1191,6 +1321,19 @@ exports[`src/components/gallery/GalleryCard without block content should match s
       >
         title
       </div>
+    </div>
+    <div
+      class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId gallery-taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
     </div>
     <div
       class="gallery-props"

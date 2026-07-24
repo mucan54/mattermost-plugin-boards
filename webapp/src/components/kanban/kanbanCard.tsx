@@ -17,6 +17,7 @@ import PropertyValueElement from '../propertyValueElement'
 import ConfirmationDialogBox, {ConfirmationDialogBoxProps} from '../confirmationDialogBox'
 import './kanbanCard.scss'
 import CardBadges from '../cardBadges'
+import TaskId from '../taskId'
 import OpenCardTourStep from '../onboardingTour/openCard/open_card'
 import CopyLinkTourStep from '../onboardingTour/copyLink/copy_link'
 import CardActionsMenu from '../cardActionsMenu/cardActionsMenu'
@@ -143,6 +144,10 @@ const KanbanCard = (props: Props) => {
                         {card.title || intl.formatMessage({id: 'KanbanCard.untitled', defaultMessage: 'Untitled'})}
                     </div>
                 </div>
+                <TaskId
+                    card={card}
+                    className='KanbanCard__taskId'
+                />
                 {visiblePropertyTemplates.map((template) => (
                     <Tooltip
                         key={template.id}

@@ -172,6 +172,19 @@ exports[`src/components/kanban/kanbanCard return kanbanCard and click on copy li
     </div>
     <div
       class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId KanbanCard__taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
+    </div>
+    <div
+      class="octo-tooltip tooltip-top"
       data-tooltip="name"
     >
       <div
@@ -351,6 +364,19 @@ exports[`src/components/kanban/kanbanCard return kanbanCard and click on delete 
       >
         title
       </div>
+    </div>
+    <div
+      class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId KanbanCard__taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
     </div>
     <div
       class="octo-tooltip tooltip-top"
@@ -536,6 +562,19 @@ exports[`src/components/kanban/kanbanCard return kanbanCard and click on duplica
     </div>
     <div
       class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId KanbanCard__taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
+    </div>
+    <div
+      class="octo-tooltip tooltip-top"
       data-tooltip="name"
     >
       <div
@@ -582,6 +621,19 @@ exports[`src/components/kanban/kanbanCard should match snapshot 1`] = `
     </div>
     <div
       class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId KanbanCard__taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
+    </div>
+    <div
+      class="octo-tooltip tooltip-top"
       data-tooltip="name"
     >
       <div
@@ -612,6 +664,19 @@ exports[`src/components/kanban/kanbanCard should match snapshot with readonly 1`
       >
         title
       </div>
+    </div>
+    <div
+      class="octo-tooltip tooltip-top"
+      data-tooltip="Click to copy task ID"
+    >
+      <button
+        class="TaskId KanbanCard__taskId"
+        type="button"
+      >
+        <span
+          class="TaskId__code"
+        />
+      </button>
     </div>
     <div
       class="octo-tooltip tooltip-top"

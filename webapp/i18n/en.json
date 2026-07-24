@@ -298,6 +298,8 @@
   "TableRow.DuplicateCard": "duplicate card",
   "TableRow.MoreOption": "More actions",
   "TableRow.open": "Open",
+  "TaskId.copied": "Copied task ID!",
+  "TaskId.tooltip": "Click to copy task ID",
   "TopBar.give-feedback": "Give feedback",
   "URLProperty.copiedLink": "Copied!",
   "URLProperty.copy": "Copy",

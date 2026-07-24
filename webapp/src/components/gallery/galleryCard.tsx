@@ -20,6 +20,7 @@ import ImageElement from '../content/imageElement'
 import PropertyValueElement from '../propertyValueElement'
 import './galleryCard.scss'
 import CardBadges from '../cardBadges'
+import TaskId from '../taskId'
 import CardActionsMenu from '../cardActionsMenu/cardActionsMenu'
 import ConfirmationDialogBox, {ConfirmationDialogBoxProps} from '../confirmationDialogBox'
 import CardActionsMenuIcon from '../cardActionsMenu/cardActionsMenuIcon'
@@ -147,6 +148,10 @@ const GalleryCard = (props: Props) => {
                                 />}
                         </div>
                     </div>}
+                <TaskId
+                    card={card}
+                    className='gallery-taskId'
+                />
                 {visiblePropertyTemplates.length > 0 &&
                     <div className='gallery-props'>
                         {visiblePropertyTemplates.map((template) => (

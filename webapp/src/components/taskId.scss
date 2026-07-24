@@ -1,0 +1,40 @@
+.TaskId {
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 2px 6px;
+    border: 0;
+    border-radius: var(--default-rad, 4px);
+    background: rgba(var(--center-channel-color-rgb), 0.08);
+    color: rgba(var(--center-channel-color-rgb), 0.72);
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(var(--center-channel-color-rgb), 0.16);
+        color: rgba(var(--center-channel-color-rgb), 0.9);
+    }
+
+    &:active {
+        background: rgba(var(--center-channel-color-rgb), 0.24);
+    }
+
+    .TaskId__code {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.KanbanCard__taskId,
+.gallery-taskId {
+    margin-top: 6px;
+}
+
+.CardDetail__taskId {
+    margin-bottom: 8px;
+}

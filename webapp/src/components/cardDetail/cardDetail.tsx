@@ -35,6 +35,8 @@ import {getClientConfig} from '../../store/clientConfig'
 
 import CardSkeleton from '../../svg/card-skeleton'
 
+import TaskId from '../taskId'
+
 import CommentsList from './commentsList'
 import {CardDetailProvider} from './cardDetailContext'
 import CardDetailContents from './cardDetailContents'
@@ -197,6 +199,11 @@ const CardDetail = (props: Props): JSX.Element|null => {
     return (
         <>
             <div className={`CardDetail ${limited ? ' CardDetail--is-limited' : ''}`}>
+                {!limited &&
+                    <TaskId
+                        card={card}
+                        className='CardDetail__taskId'
+                    />}
                 <BlockIconSelector
                     block={card}
                     size='l'

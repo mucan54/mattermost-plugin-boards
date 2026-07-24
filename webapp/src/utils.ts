@@ -64,6 +64,24 @@ class Utils {
         return idType + Utils.base32encode(data, false)
     }
 
+    // getCardShortId derives a short, stable, human-readable task ID from a
+    // card's unique block ID. The resulting code is safe to use for git branch
+    // names and for tracing tasks (e.g. TASK-A1B2C3D4). Because it is derived
+    // deterministically from the already-unique card ID, the same card always
+    // yields the same shortcode.
+    static getCardShortId(cardId: string): string {
+        if (!cardId) {
+            return ''
+        }
+
+        // Card IDs are a single-character type prefix followed by a base32
+        // encoded random value. Strip the prefix and use the trailing portion
+        // of the unique part so the code stays short but effectively unique.
+        const unique = cardId.replace(/^[a-z]/, '')
+        const shortcode = unique.slice(-8).toUpperCase()
+        return `TASK-${shortcode}`
+    }
+
     static blockTypeToIDType(blockType: string | undefined): IDType {
         let ret: IDType = IDType.None
         switch (blockType) {
